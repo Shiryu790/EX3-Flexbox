@@ -1,0 +1,37 @@
+/* VOTRE CSS ICI */
+.header {
+    flex-direction: row;
+    display: block;
+    padding-bottom: 43px;
+
+}
+.contenu {
+    display: flex;
+}
+.footer {
+    text-align: center;
+}
+
+@media (max-width : 600px) {
+    .contenu {
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
+    .contenu :nth-child(2) {
+        display: flex;
+        order: -1;
+        flex-direction: row;
+        
+    }
+    .contenu :nth-child(1) {
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+
+    }
+    .contenu :nth-child(3) {
+        flex-wrap: nowrap;
+        flex-basis: 50%;
+    }
+
+}
